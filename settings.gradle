@@ -1,0 +1,11 @@
+rootProject.name = 'bank-online'
+
+include 'payment-receiver'
+include 'payment-selector'
+include 'payment-account-validate'
+include 'payment-card-validate'
+include 'payment-phone-validate'
+include 'payment-consumer'
+include 'payment-processor'
+include 'payment-abs-simulator'
+
