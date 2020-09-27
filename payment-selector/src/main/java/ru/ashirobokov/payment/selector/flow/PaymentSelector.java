@@ -23,7 +23,7 @@ public class PaymentSelector {
             processor.account().send(message(payment));
         } else if (payment.getPaymentType().equals("card")) {
             processor.card().send(message(payment));
-        } else if (payment.getPaymentType().equals("mobile")) {
+        } else if (payment.getPaymentType().equals("mobile_phone")) {
             processor.phone().send(message(payment));
         }
     }

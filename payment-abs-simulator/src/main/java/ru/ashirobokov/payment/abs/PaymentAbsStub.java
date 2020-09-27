@@ -47,7 +47,7 @@ public class PaymentAbsStub {
     }
 
     private boolean balanceCheck(Payment payment) {
-        if (payment.getPaymentType().equals("mobile")) {
+        if (payment.getPaymentType().equals("mobile_phone")) {
             return payment.getSum().compareTo(LIMIT_MOBILE_PHONE) < 0 ? true : false;
         } else {
             return payment.getSum().compareTo(LIMIT_BANK_PAYMENT) < 0 ? true : false;

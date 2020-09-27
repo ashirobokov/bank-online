@@ -36,6 +36,7 @@ public class PaymentProcessor {
         };
     }
 
+    @Bean
     public Function<Payment, Payment> startPayment() {
         return payment -> {
             log.info("Payment send for pay operation = {}", payment);
